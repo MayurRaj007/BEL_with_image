@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Car Parking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Car Parking System</h1>
+        
+        <div class="parking-info">
+            <h2>Available Parking Slots</h2>
+            <div class="parking-slots" id="parking-slots">
+                <div class="slot available">
+                    <h3>Slot 1</h3>
+                    <p class="status">Available</p>
+                </div>
+                <div class="slot available">
+                    <h3>Slot 2</h3>
+                    <p class="status">Available</p>
+                </div>
+                <div class="slot available">
+                    <h3>Slot 3</h3>
+                    <p class="status">Available</p>
+                </div>
+                <div class="slot available">
+                    <h3>Slot 4</h3>
+                    <p class="status">Available</p>
+                </div>
+                <div class="slot available">
+                    <h3>Slot 5</h3>
+                    <p class="status">Available</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="log">
+            <h2>Parking Log</h2>
+            <table id="parking-log">
+                <thead>
+                    <tr>
+                        <th>Vehicle Number</th>
+                        <th>Entry Time</th>
+                        <th>Exit Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Log entries will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="upload-section">
+            <h2>Upload Image from OV7670 Camera</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="image-input" name="image" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
